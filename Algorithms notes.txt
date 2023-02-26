@@ -30,4 +30,15 @@ linear search O(n)
 
 binary search O(logn) - know the position in the list
 
+recursive binary search - function that has a stopping point and calls itself
+    - python has a limit to this so iterative binary search is prefered
+
+
+insertion O(n) linear time
+appending O(1) constant time
+list resizing - python doesn't resize just for the element we want to add, it allocated 4 blocks of memory so it doesn't have to resize the list every time we add an element
+    0, 4, 8, 16, 25, 35, 46 - how python allocates space to resize
+    ammortized constant space complexity
+extend O(k) - k is the number of elements in the list added 
+delet O(n) linear time
 

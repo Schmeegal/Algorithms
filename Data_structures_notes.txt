@@ -1,0 +1,18 @@
+Data structures:
+array[]
+    Java - homogenous containers
+    Python - heterogenous containers
+contiguous data structure - all values are next to each other
+or use pointers to access data stored in different places
+
+linked list - self referential object
+Linear data structure where each element of the list is contained in a separate object called a node
+    a node models 2 pieces of info - an item of the data we want to store and a reference to the next element in the list
+    head node - first node
+    tail node - last node
+Doubly linked list stores reference to the node before and the next node
+
+inserting data is more efficient - only true if inserting at head or tail - called prepend(head) or append(tail)
+
+insert - just need to change references to nodes to insert data - constant time but*
+    finding position of where you want to insert is linear time
