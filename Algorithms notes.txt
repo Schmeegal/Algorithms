@@ -1,0 +1,33 @@
+Algorithms:
+
+need the right data sctructure and the right algorithm depending on what you want to accomplish - most efficient
+
+time and space complexity - O(n)
+
+          running time 
+
+O(1)
+
+O(logn) - sublinear time
+
+O(n) - linear time
+
+O(nlogn) - quasilinear time
+    ex: merge sort
+
+O(n^2) - quadratic time
+
+O(n^3) - cubic time
+
+O(n^k) - polynomial runtime
+
+O(x^n) - 
+    ex: brute force
+    
+O(n!) - factorial/ combinatorial runtime
+
+linear search O(n)
+
+binary search O(logn) - know the position in the list
+
+
