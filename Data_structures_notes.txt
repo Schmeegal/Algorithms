@@ -16,3 +16,7 @@ inserting data is more efficient - only true if inserting at head or tail - call
 
 insert - just need to change references to nodes to insert data - constant time but*
     finding position of where you want to insert is linear time
+
+
+Merge Sort:
+splits arrays in half until all single element arrays, then sorts while merging back doublng each time
