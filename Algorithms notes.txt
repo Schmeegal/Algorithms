@@ -64,7 +64,9 @@ an array is either monotone increasing or monotone decreasing
 monotone increasing - if all elements from left to right are non-decreasing
 monotone decreasing - if all elements from left to right are non-increasing
 
-
+Sorting and Search algorithms:
+unsorted list - might have to use linear search
+sorted list - can use binary search
 
 
 
