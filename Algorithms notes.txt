@@ -1,6 +1,6 @@
 Algorithms:
 
-need the right data sctructure and the right algorithm depending on what you want to accomplish - most efficient
+need the right data structure and the right algorithm depending on what you want to accomplish - most efficient
 
 time and space complexity - O(n)
 
@@ -31,14 +31,45 @@ linear search O(n)
 binary search O(logn) - know the position in the list
 
 recursive binary search - function that has a stopping point and calls itself
-    - python has a limit to this so iterative binary search is prefered
+    - python has a limit to this so iterative binary search is preferred
 
 
 insertion O(n) linear time
 appending O(1) constant time
 list resizing - python doesn't resize just for the element we want to add, it allocated 4 blocks of memory so it doesn't have to resize the list every time we add an element
     0, 4, 8, 16, 25, 35, 46 - how python allocates space to resize
-    ammortized constant space complexity
+    amortized constant space complexity
 extend O(k) - k is the number of elements in the list added 
-delet O(n) linear time
+delete O(n) linear time
+
+
+Data Structures: Arrays
+access - S, T O(1)
+set - O(1)    - direct access
+traverse/search - T O(n), S O(1)
+copy - S, T O(n)
+insert - depends on static array(c++, java) or dynamic array(python, js) S O(1)
+    -static- fixed size, next memory slot may not be empty
+    -dynamic- os allocates almost 2 times as much memory needed - amortized constant time O(1) insertion at end
+    at beginning - T O(n) 
+    at end - static T O(n), dynamic T O(1) 
+    somewhere in between - T O(n)
+remove - S O(1)
+    at beginning - T O(n)
+    at end - T O(1)
+    somewhere in between - T O(n)
+
+Monotonic -
+an array is either monotone increasing or monotone decreasing
+monotone increasing - if all elements from left to right are non-decreasing
+monotone decreasing - if all elements from left to right are non-increasing
+
+
+
+
+
+
+
+
+
 
