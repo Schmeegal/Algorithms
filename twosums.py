@@ -15,27 +15,13 @@ class Solution:
     def twoSum(self, nums, target):
         
         d = {}
-        for i, j in enumerate(nums):
-            r = target - j
+        for i, v in enumerate(nums):
+            r = target - v
             if r in d: 
                 return [d[r], i]
-            d[j] = i
+            d[v] = i
 
 
 nums = [2,7,11,15]
 obj = Solution()
-print(obj.twoSum(nums, 17))
-
-'''
-class Solution(object):
-   def twoSum(self, nums, target):
-      required = {}
-      for i in range(len(nums)):
-         if target - nums[i] in required:
-            return [required[target - nums[i]],i]
-         else:
-            required[nums[i]]=i
-input_list = [2,8,12,15]
-ob1 = Solution()
-print(ob1.twoSum(input_list, 20))
-'''
+print(obj.twoSum(nums, 4))

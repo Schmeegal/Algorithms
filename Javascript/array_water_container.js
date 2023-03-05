@@ -19,3 +19,24 @@ const maxAreaBruteForce = function(array){
 console.log(maxAreaBruteForce(container))
 */
 
+
+//use pointer method starting at edges (starting with max width: last-first)
+// S O(1), T O(n) (touch each element 1 time)
+array = [3,7,5,6,8,4] 
+
+const maxArea = function(array){
+    let area = 0;
+    let i = 0;
+    let j = array.length-1;
+    while (i<j){
+        let height = Math.min(array[i], array[j]);
+        let newArea = height*(j-1);
+        area = Math.max(area,newArea);
+        if (array[i] < array[j]) i++;
+        else j--;
+
+    }
+    return area
+}
+
+console.log(maxArea(array))

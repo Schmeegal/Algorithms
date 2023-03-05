@@ -20,3 +20,24 @@ insert - just need to change references to nodes to insert data - constant time 
 
 Merge Sort:
 splits arrays in half until all single element arrays, then sorts while merging back doublng each time
+
+Hash Tables: are not ordered
+JS: Objects, Python: dictionaries
+key: value pairs
+Hash tables are built on top of arrays
+What makes a good hash functions:
+- same input always gives the same output
+- fast (constant time)
+- minimize collisions
+
+Collision handling - different techniques
+linked list 
+
+Big O of operations on Hash Tables: (all T, S O(1) constant time and space)
+worst case T O(n), S O(1) - this would be a poor hash function
+access - given key, find value
+insert - add new key: value pair
+delete - remove key: value pair
+search for key - T O(1)
+search for value - T O(n)
+create a new Hash table with n key:value pairs S O(n)
