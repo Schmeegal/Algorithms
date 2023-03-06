@@ -1,0 +1,19 @@
+// T O(n), S O(1)
+//make hash table for each string, then compare indexes
+//make entries for hash tables using opposing keys
+
+const checkIsomorphic = function(s, t){
+    if (s.length !== t.length) return false;
+    const sHash = {};
+    const tHash = {};
+    for (let i = 0; i < s.length; i++){
+        let charS = s[i];
+        let charT = t[i];
+        if (!sHash[charS]) sHash[charS] = charT;
+        if (!tHash[charT]) tHash[charT] = charS;
+        if (sHash[charS] !== charT || tHash[charT] !== charS) return false;
+    }
+    return true;
+}
+
+console.log(checkIsomorphic('hello', 'buggu'))
