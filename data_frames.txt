@@ -1,0 +1,38 @@
+exploring data frames:
+.head() - returns first few row of dadta frame - to get idea of the data
+.info() - names of columns, the data types and whether they have any missing values
+.shape - typle of row, columns
+.describe() - gives some statistics like mean, min, max, std
+.values -  return values in 2d array, can print out entire array
+.columns - names of column rows
+.index - row numbers or row names 
+.unique() - to see a list of unique values
+.value_counts() - to see a list of unique values and how often they occur in the dataset
+
+
+.sort_values("column_name") - sort the array according to column name specified
+    - add asceding = False param to sort highest to lowest
+    - can add second column name to sort by (for cases where 1st col values are the same, can sort them by second col values)
+        - put column names in a list ["column_1", "column2"] as param
+
+array["column_name"] - to look at specified column only, use list to add more columns
+array["column_name"] > 50 - use bool to filter results 
+
+adding a new column ex:
+array["new_col_name"] = array["col_name"] / 100  #doing a calculation and making a new column with the info
+
+
+creating data frames:
+example:
+pandas.DataFrame({key1: [value1, value2, value3], key2: [value1, value2, value3]})
+keys are the coloumn names and values are the rows of values
+
+array.iloc[index] - can do index or [index, col] using splicing to include/exclude
+ex: reviews.description.iloc[:10] gives first 10 values in col 'description'
+ex: reviews.iloc[[1,2,3,5,8], :] gives rows 1,2,3,5,8 with all columns
+
+iloc splicing excludes last index while loc is all inclusive
+ex: array.iloc[:100] does not include row 100 but array.loc[:100] includes row 100
+
+can use bools with loc and iloc for conditional selecting
+ex: array.loc[array.country == 'Italy'] gives all results for country of Italy
